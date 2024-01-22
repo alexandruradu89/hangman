@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div style="text-align: center;">
+        <p>Hangman</p>
+        <div>
+            <input type="text" id="inputWord">
+            <button id="wordButton" type="button" class="btn btn-secondary"
+             onclick="getWord()"
+            >Input Word</button>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="inputLetter">
+            <button id="letterButton" type="button" class="btn btn-secondary"
+             onclick ="checkLetter()"
+            >Guess Letter</button>
+        </div>
+        <br>
+        <p>Guess the word:</p>
+        <br>
+        <p id="display"></p>
+        <br>
+        <p>Lives left:</p>
+        <p id="Lives"></p>
+    </div>
+    <div id="generateButtonsDiv"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
