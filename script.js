@@ -10,7 +10,6 @@ function getWord() {
         return;
     }
     word = document.getElementById("inputWord").value.toLowerCase();
-
     length = 2 * word.length;
     for (let i = 0; i < length; ++i) {
         if (i % 2 == 0) {
